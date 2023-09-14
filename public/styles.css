@@ -1,0 +1,88 @@
+/* Styles to make the body a flex container and center its children */
+body {
+    margin: 0;
+    height: 100vh; /* Viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header, footer, form {
+    max-width: 80vw; /* Limits the width to 80% of the viewport width */
+    width: 100%; /* Full width of the parent */
+    text-align: center; /* Center inline elements */
+}
+
+.hextle-grid {
+    display: inline-block; /* So that it only takes as much width as necessary */
+}
+
+/* Just an additional style to make the page look a bit neater */
+h1 {
+    margin-bottom: 20px;
+}
+
+#submit-button {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    cursor: default; /* or cursor: pointer; if you want the hand cursor */
+  }
+  
+
+.grid-element {
+    width: 50px;          /* Set the width of the input */
+    height: 50px;         /* Set the height of the input */
+    border: 2px solid black; /* Apply a border to the input */
+    padding: 0;           /* Remove any padding */
+    text-align: center;   /* Center the text/number inside */
+    background-color: #ffffff; /* pure white */
+    color: black
+}
+
+input {
+    font-size: 20px; /* or any other desired value */
+    /*text-transform: uppercase;*/
+}
+
+
+body {
+    font-family: "nyt-franklin", sans-serif;
+}
+
+#keyboard-cont {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #keyboard-cont div {
+    display: flex;
+  }
+  
+  .second-row {
+    margin: 0.5rem 0;
+  }
+  
+  .keyboard-button {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin: 0 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  .grid-element:focus {
+    outline: none; /* Removes the default outline */
+    border: 2px solid black; /* You can adjust this to whatever styling you prefer */
+}
+
+.grid-element {
+    caret-color: transparent;
+}
+
+

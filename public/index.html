@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hextle</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Hextle</h1>
+        <h2 id="random-word"></h2>
+    </header>
+
+    <form class="Hextle-grid">
+        <div class="hextle-grid-row-1">
+            <input type="text" class= "grid-element" name="input00" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input01" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input02" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input03" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input04" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input05" maxlength="1" oninput="convertToUppercase(this)"/>
+        </div>
+
+        <div class="hextle-grid-row-2">
+            <input type="text" class= "grid-element" name="input10" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input11" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input12" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input13" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input14" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input15" maxlength="1" oninput="convertToUppercase(this)"/>
+        </div>
+
+        <div class="hextle-grid-row-3">
+            <input type="text" class= "grid-element" name="input20" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input21" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input22" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input23" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input24" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input25" maxlength="1" oninput="convertToUppercase(this)"/>
+        </div>
+
+        <div class="hextle-grid-row-4">
+            <input type="text" class= "grid-element" name="input30" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input31" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input32" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input33" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input34" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input35" maxlength="1" oninput="convertToUppercase(this)"/>
+        </div>
+
+        <div class="hextle-grid-row-5">
+            <input type="text" class= "grid-element" name="input40" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input41" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input42" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input43" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input44" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input45" maxlength="1" oninput="convertToUppercase(this)"/>
+        </div>
+
+        <div class="hextle-grid-row-6">
+            <input type="text" class= "grid-element" name="input50" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input51" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input52" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input53" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input54" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input55" maxlength="1" oninput="convertToUppercase(this)"/>
+        </div>
+
+        <div class="hextle-grid-row-7">
+            <input type="text" class= "grid-element" name="input60" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input61" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input62" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input63" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input64" maxlength="1" oninput="convertToUppercase(this)"/>
+            <input type="text" class= "grid-element" name="input65" maxlength="1" oninput="convertToUppercase(this)"/>
+        </div>
+
+
+     <!--  <button type="button" id="submit-button">Submit</button>--> 
+    </form>
+    <footer>
+        <div id="rowTracker"></div>
+        <div id="keyboard-cont">
+            <div class="first-row">
+                <button class="keyboard-button" id="Q">q</button>
+                <button class="keyboard-button" id="W">w</button>
+                <button class="keyboard-button" id="E">e</button>
+                <button class="keyboard-button" id="R">r</button>
+                <button class="keyboard-button" id="T">t</button>
+                <button class="keyboard-button" id="Y">y</button>
+                <button class="keyboard-button" id="U">u</button>
+                <button class="keyboard-button" id="I">i</button>
+                <button class="keyboard-button" id="O">o</button>
+                <button class="keyboard-button" id="P">p</button>
+            </div>
+            <div class="second-row">
+                <button class="keyboard-button" id="A">a</button>
+                <button class="keyboard-button" id="S">s</button>
+                <button class="keyboard-button" id="D">d</button>
+                <button class="keyboard-button" id="F">f</button>
+                <button class="keyboard-button" id="G">g</button>
+                <button class="keyboard-button" id="H">h</button>
+                <button class="keyboard-button" id="J">j</button>
+                <button class="keyboard-button" id="K">k</button>
+                <button class="keyboard-button" id="L">l</button>
+            </div>
+            <div class="third-row">
+                <button class="keyboard-button" id ="Del">Del</button>
+                <button class="keyboard-button" id="Z">z</button>
+                <button class="keyboard-button" id="X">x</button>
+                <button class="keyboard-button" id="C">c</button>
+                <button class="keyboard-button" id="V">v</button>
+                <button class="keyboard-button" id="B">b</button>
+                <button class="keyboard-button" id="N">n</button>
+                <button class="keyboard-button" id="M">m</button>
+                <button class="keyboard-button" id="Enter">Enter</button>
+            </div>
+        </div>
+    </footer>
+    <script src="wordOfTheDay.js"></script>
+    <script src="cellTracking.js"></script>
+    <script src="inputLogic.js"></script>
+    <script src="testExecutionFunction.js"></script>
+    <script src="checkIfInDictionary.js"></script>
+    <script src="rowEvaluation.js"></script>
+    <script src="keyboardFunctionality.js"></script>
+
+
+</body>
+</html>
